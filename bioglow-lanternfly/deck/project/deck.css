@@ -1,0 +1,138 @@
+/* Palette taken from the insect itself: red hindwing, grey-tan forewing, black spots. */
+section {
+  --ink: #221C19;
+  --soft: #554A44;
+  --paper: #FAF5EC;
+  --sand: #EFE5D3;
+  --line: #D9CBB3;
+  --red: #C2362C;
+  --blue: #1F6E86;
+  --on-dark: #FAF5EC;
+  --on-dark-soft: #E0D3C0;
+  counter-increment: page;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  background: #FAF5EC;
+  color: #221C19;
+  padding: 128px 128px 160px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 { font-family: 'Fredoka', 'Trebuchet MS', sans-serif; }
+h1 { font-size: 128px; font-weight: 600; line-height: 1.05; }
+h2 { font-size: 72px; font-weight: 600; line-height: 1.1; color: #221C19; }
+h3 { font-size: 40px; font-weight: 600; line-height: 1.2; }
+p { font-size: 32px; line-height: 1.4; color: #554A44; }
+
+.eyebrow {
+  font-family: 'Fredoka', 'Trebuchet MS', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #C2362C;
+  margin-bottom: 20px;
+}
+.lede { font-size: 40px; line-height: 1.35; color: #554A44; margin-top: 28px; }
+.body { margin-top: 56px; flex: 1; }
+
+/* footer band */
+.foot {
+  position: absolute; left: 128px; bottom: 64px; width: 1664px;
+  display: flex; justify-content: space-between;
+}
+.foot .foot-text { font-size: 24px; color: #554A44; }
+.pageno::after { content: counter(page); }
+.foot .pageno { font-size: 24px; color: #554A44; font-weight: 700; }
+
+/* placeholder the team fills in */
+.fill { color: #1F6E86; font-weight: 700; }
+
+/* ---------- cover ---------- */
+.cover { background: #221C19; justify-content: space-between; padding: 128px; }
+.cover h1 { color: #FAF5EC; width: 1100px; }
+.cover .eyebrow { color: #E9A29B; }
+.cover .lede { color: #E0D3C0; width: 1000px; }
+.cover .team { font-size: 32px; color: #E0D3C0; }
+.cover .team .fill { color: #9FD3E2; }
+.wing { position: absolute; right: 0; top: 0; }
+
+/* ---------- statement ---------- */
+.statement { background: #C2362C; justify-content: center; padding: 128px; }
+.statement .eyebrow { color: #FAF5EC; }
+.statement h1 { color: #FAF5EC; font-size: 112px; width: 1500px; }
+.statement .lede { color: #FAF5EC; width: 1300px; }
+
+/* ---------- cards ---------- */
+.cards { display: grid; gap: 32px; }
+.cards.three { grid-template-columns: 1fr 1fr 1fr; }
+.cards.two { grid-template-columns: 1fr 1fr; }
+.card {
+  background: #EFE5D3; border-radius: 28px; padding: 36px 40px;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.card .card-title { color: #221C19; }
+.card .card-text { font-size: 28px; line-height: 1.4; color: #554A44; }
+.card .num {
+  font-family: 'Fredoka', 'Trebuchet MS', sans-serif;
+  font-size: 28px; font-weight: 600; color: #C2362C; letter-spacing: 2px;
+}
+
+/* big-number facts */
+.facts { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 32px; }
+.fact { border-top: 6px solid #C2362C; padding-top: 24px; display: flex; flex-direction: column; gap: 12px; }
+.fact .big { font-family: 'Fredoka', 'Trebuchet MS', sans-serif; font-size: 96px; font-weight: 600; line-height: 1; color: #221C19; }
+.fact .fact-text { font-size: 28px; line-height: 1.4; color: #554A44; }
+
+/* ---------- hypothesis slide: three columns ---------- */
+.hyp { background: #FAF5EC; }
+.cols { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+.col { padding: 36px 40px; border-radius: 28px; display: flex; flex-direction: column; gap: 16px; }
+.col .label {
+  font-family: 'Fredoka', 'Trebuchet MS', sans-serif;
+  font-size: 26px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+}
+.col .col-text { font-size: 28px; line-height: 1.4; }
+.col.say { background: #EFE5D3; }
+.col.say .label { color: #C2362C; }
+.col.say .col-text { color: #554A44; }
+.col.found { background: #EFE5D3; }
+.col.found .label { color: #C2362C; }
+.col.found .col-text { color: #554A44; }
+.col.askq { background: #1F6E86; }
+.col.askq .label { color: #FAF5EC; }
+.col.askq .col-text { color: #FAF5EC; font-weight: 600; }
+
+/* ---------- table ---------- */
+table { width: 100%; font-size: 28px; color: #221C19; font-family: 'Nunito Sans', Arial, sans-serif; }
+tr.head { background: #221C19; }
+tr.head th { color: #FAF5EC; text-align: left; }
+tr.band { background: #EFE5D3; }
+
+/* ---------- question list ---------- */
+.qlist { display: grid; grid-template-columns: 1fr 1fr; gap: 28px 48px; }
+.q { display: flex; gap: 24px; align-items: flex-start; }
+.q .qn {
+  font-family: 'Fredoka', 'Trebuchet MS', sans-serif; font-size: 40px; font-weight: 600;
+  color: #C2362C; width: 56px; flex: none; line-height: 1.15;
+}
+.q .q-text { font-size: 30px; line-height: 1.35; color: #221C19; }
+
+/* ---------- sources ---------- */
+.src { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; }
+.src .src-col { display: flex; flex-direction: column; gap: 12px; }
+.src .src-label {
+  font-family: 'Fredoka', 'Trebuchet MS', sans-serif;
+  font-size: 26px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #C2362C;
+}
+.src .src-item { font-size: 24px; line-height: 1.35; color: #554A44; }
+
+/* dark closing */
+.closing { background: #221C19; justify-content: center; padding: 128px; }
+.closing h1 { color: #FAF5EC; font-size: 112px; }
+.closing .lede { color: #E0D3C0; width: 1200px; }
+.closing .eyebrow { color: #E9A29B; }
+
+/* arrival motion */
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } }
+.stagger { animation: rise 420ms ease-out both; animation-delay: calc(var(--i) * 120ms); }

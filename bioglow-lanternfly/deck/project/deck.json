@@ -1,0 +1,37 @@
+{
+  "v": 5,
+  "createdOnFiles": {"v": 1, "at": "2026-11-15T12:00:00Z"},
+  "lists": "css",
+  "format": {"v": 1, "shared": ["project/deck.css"]},
+  "title": "Where Did the Lanternflies Go?",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "noticed",
+    "meet",
+    "question",
+    "ideas",
+    "idea-cycle",
+    "idea-predators",
+    "idea-fungi",
+    "idea-weather",
+    "idea-people",
+    "idea-moved",
+    "evidence",
+    "ask",
+    "protocols",
+    "thanks",
+    "sources"
+  ],
+  "sections": {
+    "s1": {"description": "What the team noticed, who the spotted lanternfly is, and the question the team wants answered.", "start": "cover"},
+    "s2": {"description": "Six explanations people give for the drop in lanternflies, each with the evidence found and a question for the expert.", "start": "ideas"},
+    "s3": {"description": "How strong the evidence is, the interview questions, and the team’s draft protocols for next year.", "start": "evidence"},
+    "s4": {"description": "Thanks and the sources behind the research.", "start": "thanks"}
+  },
+  "faces": {
+    "fredoka": {"family": "Fredoka", "href": "https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Nunito+Sans:wght@400;600;700&display=swap"},
+    "nunito-sans": {"family": "Nunito Sans", "href": "https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Nunito+Sans:wght@400;600;700&display=swap"}
+  },
+  "designSystems": []
+}
